@@ -46,7 +46,7 @@ class Recorder:
             self.__data['vin'] += data[:cfg.DATA_PER_CH]
             self.__data['vd'] += data[cfg.DATA_PER_CH:]
 
-        print(f'Recording completed, total data: {len(self.__data['vin'])}')
+        print(f'Recording completed, total data: {len(self.__data["vin"])}')
 
     def save(self):
         with open(cfg.INFO_YAML_PATH, 'r') as file:
