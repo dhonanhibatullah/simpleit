@@ -52,7 +52,7 @@ class Recorder:
         with open(cfg.INFO_YAML_PATH, 'r') as file:
             info_yaml = yaml.safe_load(file)
 
-        data_filename = f'data/{info_yaml['count']:05d}.csv'
+        data_filename = f'data/{info_yaml["count"]:05d}.csv'
         info_yaml[data_filename] = f'{datetime.now()}'
         info_yaml['count'] += 1
 
