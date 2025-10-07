@@ -4,7 +4,7 @@ import struct
 import serial
 import yaml
 import pandas as pd
-import config as cfg
+import modules.config as cfg
 
 class Recorder:
 
