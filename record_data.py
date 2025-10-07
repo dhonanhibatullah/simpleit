@@ -13,6 +13,7 @@ def main():
         SERIAL_TIMEOUT
     )
     rec.record()
+    rec.save()
 
 if __name__ == '__main__':
     main()
