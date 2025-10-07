@@ -1,0 +1,7 @@
+PACKET_HEADER   = b'\x66\x99'
+PACKET_TAIL     = b'\xea\xae'
+DATA_LENGTH     = 512
+DATA_NUMBER     = DATA_LENGTH // 2
+DATA_PER_CH     = DATA_NUMBER // 2
+UNPACK_FORMAT   = f'<{DATA_NUMBER}H'
+INFO_YAML_PATH  = 'data/info.yaml'
