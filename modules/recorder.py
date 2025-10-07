@@ -53,7 +53,7 @@ class Recorder:
             info_yaml = yaml.safe_load(file)
 
         data_filename = f'data/{info_yaml["count"]:05d}.csv'
-        info_yaml[data_filename] = f'{datetime.now()}'
+        info_yaml[data_filename] = f'{datetime.datetime.now()}'
         info_yaml['count'] += 1
 
         df = pd.DataFrame(self.__data)
