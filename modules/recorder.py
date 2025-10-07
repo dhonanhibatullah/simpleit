@@ -43,8 +43,8 @@ class Recorder:
                 continue
 
             data = struct.unpack(cfg.UNPACK_FORMAT, payload)
-            self.__data['vin'].append(data[:cfg.DATA_PER_CH])
-            self.__data['vd'].append(data[cfg.DATA_PER_CH:])
+            self.__data['vin'] += data[:cfg.DATA_PER_CH]
+            self.__data['vd'] += data[cfg.DATA_PER_CH:]
 
         print(f'Recording completed, total data: {len(self.__data['vin'])}')
 
